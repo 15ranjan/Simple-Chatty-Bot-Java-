@@ -8,13 +8,13 @@ public class SimpleBot {
         remindName();
         guessAge();
         count();
-        // ...
+        
         test();
         end();
     }
 
-    static void greet(String assistantName, String birthYear) {
-        System.out.println("Hello! My name is " + assistantName + ".");
+    static void greet(String botName, String birthYear) {
+        System.out.println("Hello! My name is " + botName + ".");
         System.out.println("I was created in " + birthYear + ".");
         System.out.println("Please, remind me your name.");
     }
@@ -27,18 +27,20 @@ public class SimpleBot {
     static void guessAge() {
         System.out.println("Let me guess your age.");
         System.out.println("Enter remainders of dividing your age by 3, 5 and 7.");
-        int rem3 = scanner.nextInt();
-        int rem5 = scanner.nextInt();
-        int rem7 = scanner.nextInt();
-        int age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105;
-        System.out.println("Your age is " + age + "; that's a good time to start programming!");
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        int result = (a * 70 + b * 21 + c * 15) % 105;
+
+
+        System.out.println("Your age is "+result+"; that's a good time to start programming!");
     }
 
     static void count() {
         System.out.println("Now I will prove to you that I can count to any number you want.");
-        int num = scanner.nextInt();
-        for (int i = 0; i <= num; i++) {
-            System.out.printf("%d!\n", i);
+        int n = scanner.nextInt();
+        for(int i = 0; i <= n; i++){
+            System.out.println(i+"!");
         }
     }
 
@@ -61,6 +63,6 @@ public class SimpleBot {
 
     }
     static void end(){
-        System.out.println("Congratulations, have a nice day!"); // Do not change this text
+        System.out.println("Congratulations, have a nice day!");
     }
 }
