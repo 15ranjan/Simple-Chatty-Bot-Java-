@@ -31,8 +31,7 @@ public class SimpleBot {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
         int result = (a * 70 + b * 21 + c * 15) % 105;
-
-
+        
         System.out.println("Your age is "+result+"; that's a good time to start programming!");
     }
 
@@ -46,8 +45,6 @@ public class SimpleBot {
 
     static void test() {
         System.out.println("Let's test your programming knowledge.");
-        // write your code here
-
 
         System.out.println("Why do we use methods?");
         System.out.println("1. To repeat a statement multiple times.");
